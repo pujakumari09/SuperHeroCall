@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Call Superheros</title>
+  <link rel = "stylesheet" href = "public/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "public/css/style.css">
+  <script src = "public/js/jquery-3.2.1.min.js"></script>
+  <script src = "public/js/angular.min.js"></script>
+  <script src = "public/js/angular-route.min.js"></script>
+  <script src = "app.js"></script>
+  <script src = "public/js/bootstrap.min.js"></script>
+</head>
+<body ng-controller="dailController">
+  <div class="container">
+    <div class="row">
+      <div class="dail_parent_div">
+        <div class="dailbuttons">
+          <div class="superHeroNameCall">
+            <div class = "inputBox">
+              <input type="text" ng-disabled="true" ng-model="currentNum" ng-bind ="currentNum">
+            </div>
+            <div class="callButton">
+              <button type="button" class="btn btn-primary" ng-click="submitName()">Submit</button>
+            </div>
+          </div>
+          <table class="table table-responsive dailTable">
+            <tbody>
+              <tr>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>1</div>
+                    <div>
+                      <span>@</span>
+                      <span>.</span>
+                      <span>?</span>
+                    </div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>2</div>
+                    <div>
+                      <span>A</span>
+                      <span>B</span>
+                      <span>C</span>
+                    </div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>3</div>
+                    <div>
+                      <span>D</span>
+                      <span>E</span>
+                      <span>F</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>4</div>
+                    <div>
+                      <span>G</span>
+                      <span>H</span>
+                      <span>I</span>
+                    </div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>5</div>
+                    <div>
+                      <span>J</span>
+                      <span>K</span>
+                      <span>L</span>
+                    </div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>6</div>
+                    <div>
+                      <span>M</span>
+                      <span>N</span>
+                      <span>O</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>7</div>
+                    <div>
+                      <span>P</span>
+                      <span>Q</span>
+                      <span>R</span>
+                      <span>S</span>
+                    </div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>8</div>
+                    <div>
+                      <span>T</span>
+                      <span>U</span>
+                      <span>V</span>
+                    </div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>9</div>
+                    <div>
+                      <span>W</span>
+                      <span>X</span>
+                      <span>Y</span>
+                      <span>Z</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="disableBlock" style="cursor:default" ng-disabled="true">
+                  <div>
+                    <div>Send</div>
+                  </div>
+                </td>
+                <td ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>0</div>
+                  </div>
+                </td>
+                <td class="disableBlock" ng-click="getNumberAlpha($event)">
+                  <div>
+                    <div>Space</div>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

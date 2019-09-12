@@ -1,0 +1,50 @@
+.dail_parent_div {
+  display: flex;
+  justify-content: center;
+}
+
+.dailbuttons {
+  width: 55vh;
+  height: 65vh;
+  margin-top : 20px;
+}
+
+.dailTable {
+  border : 2px solid #4d4d4d;
+  width: 100%;
+  height: 100%;
+  padding: 0px !important;
+}
+
+td {
+  border: 2px solid #4d4d4d;
+  text-align: center;
+  width: 30%;
+  vertical-align: middle !important;
+  cursor: pointer;
+}
+
+.disableBlock {
+  background-color: #ddd;
+}
+
+.superHeroNameCall {
+  margin-bottom: 20px;
+  height: 10%;
+}
+
+.inputBox {
+  width: 60%;
+  float: left;
+  padding: 7px;
+}
+
+.callButton {
+  float: right;
+  width: 38%;
+  margin-top: 2%;
+}
+
+.callButton button {
+  padding: 2px 5px !important;
+}
